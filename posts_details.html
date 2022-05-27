@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="keywords" content="Website">
+    <meta name="author" content="Dev_IT_Lưu Pốt">
+    <meta name="description" content="website pharmacy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--style website-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/posts.css">
+
+    <!-- multislider-->
+    <!--javascript jquery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid ">
+            <div class="header-top ">
+                <nav class="navbar navbar-expand-xl navbar-light ">
+                    <div class="header-logo"><a class="navbar-brand" href="#"> <img
+                                src="images/Logo/logo_header.svg"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menubar-link"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="nav-menubar-link">
+                        <ul class="navbar-nav  justify-content-between me-auto" style="width: 64%">
+                            <li class="nav-item navbar-expand-xl active">
+                                <a class="nav-link" href="#">Trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="service" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"> Các dịch vụ <i class="fa fa-angle-down"></i></a>
+                                <div class="dropdown-menu" aria-labelledby="service">
+                                    <a class="dropdown-item" href="#">tất cả các dịch </a>
+                                    <a class="dropdown-item" href="#">Khám chưa bệnh</a>
+                                    <a class="dropdown-item" href="#">khám sức khỏe</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nhà thuốc</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="package-care" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Gói chăm sóc<i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Gói tiêm chủng</a>
+                                    <a class="dropdown-item" href="#">Gói khám sức khỏe</a>
+                                    <a class="dropdown-item" href="#">Gói Giải trí</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Đội ngũ bác sĩ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tin Tức</a>
+                            </li>
+                            <li class="nav-item " id="login-none">
+                                <a class="nav-link" href="#">Đăng ký</a>
+                            </li>
+                            <li class="nav-item " id="register-none">
+                                <a class="nav-link" href="#">Đăng nhập</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <a href="#" class="header-btn-primary">
+                                Đặt hẹn khám ngay
+                            </a>
+                            <a href="#" class="header-btn-blue">
+                                Tư vấn bác sĩ
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-bottom">
+                <div class="location">
+                    <nav class="navbar navbar-expand-sm">
+                        <div class="navbar-brand">
+                            <div class="col">
+                                <div class="header-location">
+                                    <div class="block">
+                                        <div class="header-icon">
+                                        </div>
+                                        <div class="text-location">
+                                            <span class="text-center">
+                                                Ho chi minh city
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="search">
+                    <div class="input-group">
+                        <select class="input-group-text" id="search-product">
+                            <option>Tất cả</option>
+                            <option>Gói dịch vụ</option>
+                            <option>Gói đa dùng</option>
+                            <option>Gói dịch vụ</option>
+                            <option>Gói dịch vụ</option>
+                        </select>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm ">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+                <div class="header-login">
+                    <div class="btn-group">
+                        <div class="order-pharmacy">
+                            <button class="btn btn-group"><i class="fa fa-clipboard fa-2x"></i> Tạo đơn thuốc</button>
+                        </div>
+                        <div class="login-register">
+                            <button class="btn btn-group"><i class="fa fa-user-circle fa-2x"></i>Đăng nhập/Đăng
+                                ký</button>
+                        </div>
+                        <div class="shopping-cart">
+                            <a class="nav-link dropdown" href="#" id="cart" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span> <i class="fa fa-shopping-cart fa-2x"></i></span>
+                                <span class="position-absolute  translate-middle badge rounded-pill bg-danger">1</span>
+                            </a>
+                            <div class="dropdown-menu cart " aria-labelledby="shopping-cart">
+                                <div class="list-cart">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Sản phẩm</th>
+                                                <th>Thành tiền</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><img style="width: 25%" src="images/product/P02846H_1_s.jpg">
+                                                    <strong>Men vi sinh BioGaia Protectis 0+</strong>
+                                                </td>
+                                                <td style="padding-bottom: 24px;padding-top: 36px">6600000VND</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="cart-total">
+                                        <span>Tổng tiền:</span>96.000 (VND)
+                                        <a class=" btn btn-primary">Xem giỏ hàng</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <article>
+        <div class="container">
+            <nav class="breadcrumbs">
+                <li class="breadcrumbs_iteam">
+                    <a href="#">
+                        <span>Trang Chủ</span>>
+                    </a>
+                    <a href="#">
+                        <span>Bài Viêt</span>>
+                    </a>
+                    <a href="#">
+                        <span class="title">Những điều cần viết về sữa mẹ và sữa công thức, chọn sữa
+                            cho trẻ sơ sinh</span>
+                    </a>
+                </li>
+            </nav>
+            <div class="row">
+                <div class="col-xl-9">
+
+                    <div class="blog">
+                        <div class="blogDetails">
+                            <div class="blogDetails-wrapper-content">
+                                <div class="blogDetails_title">
+                                    <h1>Những điều cần viết về sữa mẹ và sữa công thức, chọn sữa cho trẻ sơ sinh</h1>
+                                </div>
+                                <div class="BlogDetail_blog-content">
+                                    <p>Nuôi con bằng sữa mẹ hay sữa công thức, sữa nào tốt hơn cho sự phát triển của trẻ
+                                        là băn
+                                        khoăn
+                                        của hầu hết các cha mẹ. Cùng tìm hiểu những kiến thức sau đây để giúp bạn giải
+                                        đáp vấn
+                                        đề sữa
+                                        cho trẻ sơ sinh nhé.</p>
+
+                                    <h2><b>Sữa mẹ và sữa công thức</b></h2>
+
+                                    <p><strong><a
+                                                href="https://www.pharmacity.vn/sua-me-tot-cho-be-tu-dau-den-chan.htm">Sữa
+                                                mẹ</a></strong> là sữa được tiết ra bởi các tuyến vú của người mẹ sau
+                                        khi sinh
+                                        con để
+                                        nuôi trẻ sơ sinh và trẻ nhỏ, đây là nguồn dinh dưỡng tốt nhất đối với trẻ sơ
+                                        sinh.</p>
+
+                                    <p>Sữa công thức hay còn gọi là sữa bột được biết đến như một là loại sữa chỉ dành
+                                        riêng cho
+                                        trẻ sơ
+                                        sinh và trẻ nhỏ dưới 12 tháng tuổi. Trong đó, thành phần của sữa được mô phỏng
+                                        theo các
+                                        thành
+                                        phần dinh dưỡng có trong sữa mẹ, đáp ứng tiêu chuẩn dinh dưỡng giúp trẻ tăng
+                                        trưởng và
+                                        phát
+                                        triển tốt cả về thể chất lẫn trí não.</p>
+
+                                    <p style="text-align:center"><img alt="Lợi ích của sữa mẹ" height="466"
+                                            src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/sua-cho-tre-so-sinh-1.webp"
+                                            width="699"></p>
+
+                                    <p style="text-align: center;"><em><strong>Sữa mẹ là nguồn dinh dưỡng tốt nhất đối
+                                                với trẻ
+                                                sơ
+                                                sinh</strong></em></p>
+
+                                    <h3><strong><i>1.Lợi ích sữa mẹ</i></strong></h3>
+
+                                    <p>Nuôi con bằng sữa mẹ là tốt nhất cho trẻ sơ sinh trong những năm tháng đầu đời,
+                                        sữa mẹ có
+                                        nhiều
+                                        lợi ích mà các loại sữa công thức không thể thay thế được.</p>
+
+                                    <p><b><i>Đối với bé</i></b></p>
+
+                                    <p>Sữa mẹ là nguồn thức ăn bổ dưỡng cho bé, sữa có chứa các dưỡng chất tốt cho bé
+                                        như chất
+                                        béo, chất
+                                        đạm, Carbohydrates, Immune Boosters, vitamin và khoáng chất, Enzyme và hormone.
+                                        Đây là
+                                        các dưỡng
+                                        chất cần thiết cho sự phát triển của bé, đặc biệt sữa mẹ có khả năng thay đổi
+                                        theo thời
+                                        gian để
+                                        đáp ứng nhu cầu dinh dưỡng của trẻ theo từng giai đoạn.</p>
+
+                                    <ul>
+                                        <li>Bú sữa mẹ giúp bé tăng cường hệ miễn dịch, bổ sung kháng thể tự nhiên truyền
+                                            từ mẹ
+                                            sang con
+                                            để bảo vệ bé trước các nguy cơ mắc bệnh, đặc biệt là bệnh nhiễm trùng nguy
+                                            hiểm.
+                                        </li>
+                                        <li>Trong sữa mẹ có chứa chủng vi sinh vật có lợi probiotics cần thiết cho hệ
+                                            miễn dịch
+                                            và sự
+                                            phát triển đường ruột khỏe mạnh.</li>
+                                        <li>Sữa mẹ chứa nhiều đạm whey, bú sữa mẹ giúp bé dễ tiêu hóa hơn sữa công thức.
+                                        </li>
+                                        <li>Sữa mẹ giúp bé tăng cân tốt và giảm nguy cơ bị béo phì, giảm các nguy cơ mắc
+                                            bệnh
+                                            hen suyễn,
+                                            tim mạch, huyết áp,…</li>
+                                        <li>Nuôi con bằng nguồn sữa mẹ giúp duy trì tình cảm mẹ con và giúp bé phát
+                                            triển nhận
+                                            thức tốt
+                                            và thông minh hơn.</li>
+                                    </ul>
+
+                                    <p><b><i>Đối với mẹ</i></b></p>
+
+                                    <p>Ngoài các lợi ích của sữa mẹ đối với trẻ, nếu nuôi con bằng sữa mẹ đồng thời đem
+                                        lại
+                                        nhiều lợi
+                                        ích tuyệt vời đối với người mẹ.</p>
+
+                                    <ul>
+                                        <li>Giảm nguy cơ mắc các bệnh tiểu đường, ung thư vú, ung thư buồng trứng, loãng
+                                            xương,…
+                                        </li>
+                                        <li>Cho bé bú sữa cũng giúp mẹ đốt cháy calo nhanh hơn, giảm cân sau khi sinh
+                                            hiệu quả,
+                                            an toàn
+                                            và tiết kiệm chi phí.</li>
+                                        <li>Tạo mối liên kết đặc biệt giữa mẹ và bé, giúp mẹ giảm căng thẳng, mệt mỏi và
+                                            cảm
+                                            thấy hạnh
+                                            phúc khi cho bé bú sữa mẹ.</li>
+                                    </ul>
+
+                                    <h3><strong><i>2.Lợi ích sữa công thức</i></strong></h3>
+
+                                    <p>Mặc dù sữa mẹ là sự lựa chọn tốt nhất cho trẻ sơ sinh và trẻ nhỏ trong những năm
+                                        đầu đời,
+                                        tuy
+                                        nhiên nếu không có điều kiện bú sữa mẹ, chọn sữa công thức cho trẻ sơ sinh tốt
+                                        cũng đem
+                                        lại
+                                        nhiều lợi ích cho mẹ và bé.</p>
+
+                                    <ul>
+                                        <li>Tiện lợi và linh hoạt, việc cho bé bú sữa đầy đủ và đúng giờ có thể được
+                                            thực hiện
+                                            bởi bất
+                                            kỳ ai trong gia đình, vì vậy mẹ hoàn toàn chủ động sắp xếp thời gian chăm
+                                            sóc bé và
+                                            làm
+                                            những công việc khác.</li>
+                                        <li>Giảm căng thẳng, mệt mỏi khi chia sẻ việc chăm sóc bé với những người xung
+                                            quanh.
+                                        </li>
+                                        <li>Đảm bảo lượng sữa đầy đủ cung cấp để bé phát triển tốt, không phụ thuộc vào
+                                            lượng
+                                            sữa của mẹ
+                                            ít hay nhiều. Nếu vì lý do nào đó mà mẹ cần phải uống thuốc điều trị bệnh,
+                                            và thuốc
+                                            có nguy
+                                            cơ truyền từ sữa mẹ sang con thì cũng nên cho bé dùng sữa công thức hoặc
+                                            thay thế
+                                            trong
+                                            khoảng thời gian này.</li>
+                                        <li>Ngoài các dưỡng chất mô phỏng theo sữa mẹ, sữa công thức có thể bổ sung thêm
+                                            dưỡng
+                                            chất cần
+                                            thiết khác cho bé.</li>
+                                        <li>Chế độ ăn uống của mẹ hoàn toàn độc lập và không ảnh hưởng đến sức khỏe cũng
+                                            như sự
+                                            phát
+                                            triển của bé.</li>
+                                    </ul>
+
+                                    <p><b>Có thể bạn quan tâm: <a href="https://www.pharmacity.vn/sua-danh-cho-be"
+                                                target="_blank">Sữa
+                                                dành cho bé</a></b></p>
+
+                                    <h2><b>Chọn sữa công thức cho trẻ từ 0 đến 6 tháng tuổi</b></h2>
+
+                                    <p>Sữa công thức cho trẻ sơ sinh được sử dụng khi người mẹ không thể hoặc không có
+                                        điều kiện
+                                        nuôi
+                                        con bằng sữa mẹ hoàn toàn.</p>
+
+                                    <h3><b><i>Tiêu chí chọn sữa công thức cho bé</i></b></h3>
+
+                                    <p>Từ 0 đến 6 tháng tuổi là giai đoạn quan trọng của bé, vì vậy khi chọn sữa mẹ cần
+                                        phải
+                                        chọn được
+                                        loại sữa công thức thật sự chất lượng và phù hợp với tình trạng của bé. Khi chọn
+                                        sữa
+                                        công thức
+                                        cần lưu ý lựa chọn những thương hiệu uy tín và có nguồn gốc xuất xứ rõ ràng nhằm
+                                        đảm bảo
+                                        an toàn
+                                        và sự phát triển của bé.</p>
+
+                                    <p><strong><i>Thành phần theo giai đoạn độ tuổi của bé</i></strong></p>
+
+                                    <p>Ở mỗi giai đoạn phát triển sẽ có những loại sữa với thành phần dinh dưỡng và hàm
+                                        lượng
+                                        khác nhau
+                                        theo độ tuổi của trẻ. Lưu ý tỷ lệ đạm trong thành phần của sữa có phù hợp với
+                                        trẻ hay
+                                        không, đối
+                                        với trẻ từ 0 - 12 tháng tuổi tỉ lệ đạm tiêu chuẩn khoảng 11-18%.</p>
+
+                                    <p>Đối với trẻ từ 0 đến 6 tháng tuổi nên chọn sữa công thức số 1, theo công thức này
+                                        thì sữa
+                                        có
+                                        thành phần dinh dưỡng gần giống với sữa mẹ nhằm cung cấp các dưỡng chất cần
+                                        thiết cho sự
+                                        phát
+                                        triển của trẻ trong giai đoạn đầu đời.</p>
+
+                                    <ul>
+                                        <li><strong><a
+                                                    href="https://www.pharmacity.vn/enfamil-a1-san-pham-dinh-duong-danh-cho-tre-tu-0-6-thang-hop-830g.html"
+                                                    target="_blank">Sữa bột dinh dưỡng dành cho trẻ từ 0-6 tháng Enfamil
+                                                    A+1</a></strong></li>
+                                        <li><strong><a
+                                                    href="https://www.pharmacity.vn/hipp-combiotic-organic-1-sua-bot-0-6-thang-tuoi-800g.html"
+                                                    target="_blank">Sữa bột dành cho trẻ dành cho trẻ từ 0-6 tháng HiPP
+                                                    Combiotic
+                                                    Organic 1</a></strong></li>
+                                    </ul>
+
+                                    <p><strong><i>Tình trạng dinh dưỡng và sức khỏe của bé</i></strong></p>
+
+                                    <p>Ngoài các thành phần dưỡng chất giống nhau, mỗi loại sữa có thêm một số thành
+                                        phần khác
+                                        nhau. Vì
+                                        vậy, mẹ cần xác định tình trạng dinh dưỡng và sức khỏe của bé trước khi quyết
+                                        định chọn
+                                        mua loại
+                                        sữa công thức cho bé.</p>
+
+                                    <ul>
+                                        <li>Sữa cho trẻ sơ sinh non nên chọn sữa có thành phần chứa nhiều khoáng chất,
+                                            Calo,
+                                            Protein và
+                                            chất béo giúp cơ thể dễ hấp thụ.</li>
+                                        <li>Trẻ dưới 6 tháng nhẹ cân chọn sữa công thức số 1, lưu ý thành phần giúp hỗ
+                                            trợ tiêu
+                                            hóa và
+                                            dễ hấp thu để bảo vệ hệ tiêu hóa non yếu của bé.</li>
+                                        <li>Trẻ khó tiêu hóa nên chọn sữa không có chứa thành phần Lactose để giúp bé
+                                            giải quyết
+                                            các vấn
+                                            đề rối loạn tiêu hóa.</li>
+                                    </ul>
+
+                                    <p>Chú ý tình trạng sức khỏe của bé, đối với bé bị dị ứng sữa bò hãy chọn sản phẩm
+                                        sữa dê
+                                        hoặc sữa
+                                        có nguồn gốc thực vật (sữa đậu nành) hay trẻ bị táo bón nên chọn sữa bổ sung
+                                        chất xơ.
+                                    </p>
+
+                                    <p>Tham khảo thêm ý kiến chuyên gia để lựa chọn loại sữa phù hợp, nhóm sữa đặc biệt
+                                        đáp ứng
+                                        tình
+                                        trạng dinh dưỡng và sức khỏe của bé.</p>
+
+                                    <p><strong><i>Phù hợp khả năng kinh tế gia đình</i></strong></p>
+
+                                    <p>Hiện nay, trên thị trường rất đa dạng các loại sữa cho trẻ sơ sinh và trẻ nhỏ,
+                                        tùy thuộc
+                                        vào điều
+                                        kiện kinh tế gia đình để chọn sữa phù hợp cho bé.</p>
+
+                                    <p>Sữa nhập ngoại cao cấp giá đắt nhưng nếu không phù hợp với bé thì không đem lại
+                                        hiệu quả
+                                        tốt, vì
+                                        vậy hãy luôn chú trọng chọn nhãn hiệu và loại sữa công thức phù hợp theo các
+                                        tiêu chí
+                                        trên để bé
+                                        hấp thụ dễ dàng, tăng trưởng và phát triển tốt nhất.</p>
+
+                                    <h2><strong>Lưu ý quan trọng khi dùng sữa công thức cho bé</strong></h2>
+
+                                    <p>Trong quá trình dùng sữa công thức cho trẻ sơ sinh và trẻ nhỏ, gia đình cần chú ý
+                                        biểu
+                                        hiện khi
+                                        bé không hấp thụ sữa như táo bón, nôn ói, tiêu chảy, da khô, sắc mặt xanh sao.
+                                        Khi xuất
+                                        hiện các
+                                        dấu hiệu trên ở trẻ, nên tham khảo ý kiến bác sĩ và đổi loại sữa khác cho bé.
+                                    </p>
+
+                                    <p>Ngoài ra, ba mẹ cần lưu ý pha sữa đúng quy trình, bảo quản đúng cách, dụng cụ pha
+                                        sữa đảm
+                                        bảo vệ
+                                        sinh nhằm cung cấp nguồn dinh dưỡng tốt nhất và an toàn nhất cho bé, giúp bé
+                                        khỏe mạnh
+                                        và phát
+                                        triển tốt.</p>
+
+                                    <p>Tóm lại, sữa tốt nhất cho trẻ sơ sinh và trẻ nhỏ là sữa mẹ, nguồn cung cấp đầy đủ
+                                        dưỡng
+                                        chất đảm
+                                        bảo sức khỏe và sự phát triển của trẻ. Trong trường hợp không thể cho bé bú sữa
+                                        mẹ, sữa
+                                        công
+                                        thức thay thế là giải pháp tối ưu nhất dành cho bé.</p>
+
+                                    <p style="text-align: right;"><b><i>Nguồn: Tổng hợp</i></b></p>
+
+                                    <hr>
+                                    <p><em><strong>Bạn có thể xem thêm:</strong></em></p>
+
+                                    <ul>
+                                        <li><em><strong><a
+                                                        href="https://www.pharmacity.vn/phong-ngua-thieu-dinh-duong-trong-thai-ky.htm">Phòng
+                                                        ngừa thiếu dinh dưỡng trong thai kỳ</a></strong></em></li>
+                                        <li><em><strong><a
+                                                        href="https://www.pharmacity.vn/pregnavie-complete-bi-kip-cho-con-khoe-me-xinh.htm">Pregnavie
+                                                        Complete – Bí kíp cho con khỏe, mẹ xinh</a></strong></em></li>
+                                        <li><em><strong><a
+                                                        href="https://www.pharmacity.vn/dha-va-nhung-nguoi-ban-giup-be-thong-minh-ngay-tu-trong-bung-me.htm">DHA
+                                                        và “những người bạn” giúp bé thông minh ngay từ trong bụng
+                                                        mẹ</a></strong></em>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="BlogDetail_footer-content"><span></span><span>5+ dấu hiệu nhận biết có thai
+                                        sớm nhất
+                                        bạn cần biết<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            stroke="#0065FF" stroke-width="1.5">
+                                            <path d="M15.8337 7.08398L10.0003 12.9173L4.16699 7.08398" stroke="ỉnherit"
+                                                stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></span></div>
+                                <div class="BlogDetail_related-posts">
+                                    <div class="BlogDetail_related-title">
+                                        <h4>Bài viết liên quan</h4>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-xl-3">
+                    <div class="Blogsmenu_right">
+                        <img src="images/Banner/rectangle-926.webp">
+                    </div>
+                    <div class="popular_news">
+                        <div class="Blogsmenu_right_title">
+                            <h4>Bài Viết Nổi Bật</h4>
+                        </div>
+                    </div>
+                    <div class="Blogsmenu_right_list_new">
+                        <div class="Blogsmenu_right_item_new">
+                            <img
+                                src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/qua-xin-cho-be-yeu.webp">
+                            <span>Quà tặng cho bé yêu nhân ngày Quốc tế thiếu nhi 01/06</span>
+                        </div>
+                        <div class="Blogsmenu_right_item_new">
+                            <img
+                                src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/qua-xin-cho-be-yeu.webp">
+                            <span>Quà tặng cho bé yêu nhân ngày Quốc tế thiếu nhi 01/06</span>
+                        </div>
+                        <div class="Blogsmenu_right_item_new">
+                            <img
+                                src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/qua-xin-cho-be-yeu.webp">
+                            <span>Quà tặng cho bé yêu nhân ngày Quốc tế thiếu nhi 01/06</span>
+                        </div>
+                        <div class="Blogsmenu_right_item_new">
+                            <img
+                                src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/qua-xin-cho-be-yeu.webp">
+                            <span>Quà tặng cho bé yêu nhân ngày Quốc tế thiếu nhi 01/06</span>
+                        </div>
+                        <div class="Blogsmenu_right_item_new">
+                            <img
+                                src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/qua-xin-cho-be-yeu.webp">
+                            <span>Quà tặng cho bé yêu nhân ngày Quốc tế thiếu nhi 01/06</span>
+                        </div>
+                        <div class="Blogsmenu_right_item_new">
+                            <img
+                                src="https://data-service.pharmacity.io/pmc-upload-media/production/pmc-ecm-asm/posts/qua-xin-cho-be-yeu.webp">
+                            <span>Quà tặng cho bé yêu nhân ngày Quốc tế thiếu nhi 01/06</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        </div>
+    </article>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-logo">
+                    <img style="width: 20%" src="images/Logo/logo.svg">
+                </div>
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12">
+                            <div class="list-group">
+                                <strong>Điện thoại <a href="#" class="text-center">0596586656</a></strong>
+                                <strong>Hottline <a href="#" class="text-center">0596586656</a></strong>
+                                <strong>Hỗ Trợ <a href="#" class="text-center"> support@jiohealth.com</a></strong>
+                                <strong>Copyright © 2017-2021 Dev_it98 and Le_nam Technologies, Inc</strong>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <strong>Dịch Vụ</strong>
+                            <br>
+                            <a href="#"> Trò Chuyện Với Dược Sĩ</a>
+                            <a href="#">Nhà Thuốc Jio</a>
+                            <a href="#">Hệ thống nhà thuốc</a>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <strong>Tìm Hiểu Thêm</strong>
+                            <br>
+                            <a href="#"> Dịch Vụ Thăm Khám</a>
+                            <a href="#">Đội Ngũ Bác Sĩ</a>
+                            <a href="#">Tin Tức</a>
+                            <a href="#">Báo Chí</a>
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <strong>Hỗ Trợ Khách Hàng</strong>
+                            <br>
+                            <a class="text-decoration-none" href="#"> Câu Hỏi Thường Gặp</a>
+                            <a href="#">Chính Sách Bảo Mật</a>
+                            <a href="#">Điều Khoản</a>
+                            <a href="#">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row">
+                        <div class="col-xl-6 col-sm-12">
+                            <div class="list-group">
+                                <strong>CÔNG TY TNHH PHÒNG KHÁM ĐA KHOA JIO HEALTH
+                                    Giấy CNĐKDN <p> 0309145924, đăng ký lần đầu ngày 06/07/2009, đăng ký thay đổi lần
+                                        thứ 5
+                                        ngày 07/02/2018, cấp bởi Sở KHĐT thành phố Hồ Chí Minh</p></strong>
+                                <a href="#">Thương hiệu nổi bật</a>
+                                <div class="row">
+                                    <div class="col-xl-4 col-sm-12">
+                                        <div class="list-group">
+                                            <a href="#"> Blackmores</a>
+                                            <a href="#">Vaseline</a>
+                                            <a href="#">Bayer</a>
+                                            <a href="#">Durex</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-12">
+                                        <div class="list-group">
+                                            <a href="#"> Bạch Tuyết</a>
+                                            <a href="#">Omron</a>
+                                            <a href="#">Sao Thái Dương</a>
+                                            <a href="#">Traphaco</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-sm-12">
+                                        <div class="list-group">
+                                            <a href="#"> Urgo</a>
+                                            <a href="#">Dược Hậu Giang</a>
+                                            <a href="#">Oral-B</a>
+                                            <a href="#">Johnson & Johnson</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-sm-12">
+                            <div class="list-group">
+                                <strong>Dịa chỉ</strong>
+                                <a href="#"> Phòng khám Cao cấp Đa khoa Jio Health - Jio Smart Clinic 39 Lê Duẩn, Phường
+                                    Bến
+                                    Nghé, Quận 1, TP.HCM</a>
+                                <br>
+                                <strong>Theo dõi chúng tôi</strong>
+                                <div class="icon">
+                                    <a href="#"><img src="images/icon/instagram-32.png"></a>
+                                    <a href="#"><img src="images/icon/facebook-3-32.png"></a>
+                                    <a href="#"><img src="images/icon/youtube-4-32.png"></a>
+                                    <a href="#"><img src="images/icon/twitter-4-32.png"></a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-2 col-sm-12">
+                            <div class="list-group">
+                                <a href="#"> <img src="images/icon/dathongbao.png"> </a>
+                                <br>
+                                <a href="#"> <img src="images/icon/dmca-badge-w250-5x1-06.png"> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Javascript bootstrap-->
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!--Jquery-->
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+    <!--multislider!-->
+</body>
+
+</html>

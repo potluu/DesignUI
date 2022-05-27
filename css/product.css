@@ -929,41 +929,41 @@ h3.h3 {
 }
 
 /********************* Shopping Demo-8 **********************/
-.product-grid8 {
+.posts {
     font-family: Poppins, sans-serif;
     position: relative;
     z-index: 1
 }
 
-.product-grid8 .product-image8 {
+.posts .product-image8 {
     border: 1px solid #e4e9ef;
     position: relative;
     transition: all .3s ease 0s
 }
 
-.product-grid8:hover .product-image8 {
+.posts:hover .product-image8 {
     box-shadow: 0 0 10px rgba(0, 0, 0, .15)
 }
 
-.product-grid8 .product-image8 a {
+.posts .product-image8 a {
     display: block
 }
 
-.product-grid8 .product-image8 img {
+.posts .product-image8 img {
     width: 100%;
     height: auto
 }
 
-.product-grid8 .pic-1 {
+.posts .pic-1 {
     opacity: 1;
     transition: all .5s ease-out 0s
 }
 
-.product-grid8:hover .pic-1 {
+.posts:hover .pic-1 {
     opacity: 0
 }
 
-.product-grid8 .pic-2 {
+.posts .pic-2 {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -971,11 +971,11 @@ h3.h3 {
     transition: all .5s ease-out 0s
 }
 
-.product-grid8:hover .pic-2 {
+.posts:hover .pic-2 {
     opacity: 1
 }
 
-.product-grid8 .social {
+.posts .social {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -985,31 +985,31 @@ h3.h3 {
     z-index: 1
 }
 
-.product-grid8 .social li {
+.posts .social li {
     opacity: 0;
     transform: translateY(3px);
     transition: all .5s ease 0s
 }
 
-.product-grid8:hover .social li {
+.posts:hover .social li {
     margin: 0 0 10px;
     opacity: 1;
     transform: translateY(0)
 }
 
-.product-grid8:hover .social li:nth-child(1) {
+.posts:hover .social li:nth-child(1) {
     transition-delay: .1s
 }
 
-.product-grid8:hover .social li:nth-child(2) {
+.posts:hover .social li:nth-child(2) {
     transition-delay: .2s
 }
 
-.product-grid8:hover .social li:nth-child(3) {
+.posts:hover .social li:nth-child(3) {
     transition-delay: .4s
 }
 
-.product-grid8 .social li a {
+.posts .social li a {
     color: grey;
     font-size: 17px;
     line-height: 40px;
@@ -1021,12 +1021,12 @@ h3.h3 {
     transition: all .5s ease-in-out
 }
 
-.product-grid8 .social li a:hover {
+.posts .social li a:hover {
     color: #000;
     border-color: #000
 }
 
-.product-grid8 .product-discount-label {
+.posts .product-discount-label {
     display: block;
     padding: 4px 15px 4px 30px;
     color: #fff;
@@ -1038,11 +1038,11 @@ h3.h3 {
     clip-path: polygon(34% 0, 100% 0, 100% 100%, 0 100%)
 }
 
-.product-grid8 .product-content {
+.posts .product-content {
     padding: 20px 0 0
 }
 
-.product-grid8 .price {
+.posts .price {
     color: #000;
     font-size: 19px;
     font-weight: 400;
@@ -1051,7 +1051,7 @@ h3.h3 {
     transition: all .3s
 }
 
-.product-grid8 .price span {
+.posts .price span {
     color: #999;
     font-size: 14px;
     font-weight: 500;
@@ -1060,7 +1060,7 @@ h3.h3 {
     display: inline-block
 }
 
-.product-grid8 .product-shipping {
+.posts .product-shipping {
     color: rgba(0, 0, 0, .5);
     font-size: 15px;
     padding-left: 35px;
@@ -1069,7 +1069,7 @@ h3.h3 {
     position: relative
 }
 
-.product-grid8 .product-shipping:before {
+.posts .product-shipping:before {
     content: '';
     height: 1px;
     width: 25px;
@@ -1080,7 +1080,7 @@ h3.h3 {
     left: 0
 }
 
-.product-grid8 .title {
+.posts .title {
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
@@ -1088,15 +1088,15 @@ h3.h3 {
     transition: all .3s ease 0s
 }
 
-.product-grid8 .title a {
+.posts .title a {
     color: #000
 }
 
-.product-grid8 .title a:hover {
+.posts .title a:hover {
     color: #0081c2
 }
 
-.product-grid8 .all-deals {
+.posts .all-deals {
     display: block;
     color: #fff;
     background-color: #2e353b;
@@ -1108,16 +1108,16 @@ h3.h3 {
     transition: all .5s ease 0s
 }
 
-.product-grid8 .all-deals .icon {
+.posts .all-deals .icon {
     margin-left: 7px
 }
 
-.product-grid8 .all-deals:hover {
+.posts .all-deals:hover {
     background-color: #0081c2
 }
 
 @media only screen and (max-width: 990px) {
-    .product-grid8 {
+    .posts {
         margin-bottom: 30px
     }
 }
@@ -1258,3 +1258,4 @@ h3.h3 {
         margin-bottom: 30px
     }
 }
+/* product details css*/

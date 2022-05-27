@@ -8,6 +8,34 @@ body {
     background-color: #fff;
 }
 
+.breadcrumbs{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 1rem 0;
+}
+.breadcrumbs_iteam{
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    color: #112950;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    opacity: .3;
+}
+.breadcrumbs_iteam a{
+    color: #112950;
+    text-decoration: none!important;
+} 
+.breadcrumbs_iteam .title{
+    color: #000000;
+    font-weight: 500;
+    font-style: initial;
+}
+ 
+
 .font-bold {
     font-family: AvenirNext-Bold, sans-serif;
     font-weight: 400;
