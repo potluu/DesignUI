@@ -132,7 +132,7 @@ header .header-location span {
 }
 
 header .header-bottom .search {
-    width: 55%;
+    width: 100%;
     padding: 0px;
     margin: 30px;
     display: inline-block;
@@ -182,6 +182,7 @@ header .header-login {
     box-shadow: none;
     padding: 5px 30px;
     height: 40px;
+    width: 175px;
 }
 
 .login-register {
