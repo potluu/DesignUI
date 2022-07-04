@@ -1,0 +1,122 @@
+#page-home{
+    margin: 0px;
+    padding: 0px;
+    left: 0px;
+}
+#page-home .banner-slider{
+    display: block;
+}
+#page-home  .btn-dots{
+    display: flex;
+    justify-content: center;
+}
+#page-home  .btn-dots .dot{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    z-index: 1;
+    margin-top: -25px;
+    margin-right: 25px;
+    background-color: #0b5ed7;
+}
+#page-home .targets{
+    display: block;
+}
+#page-home .list-item{
+    display: flex;
+    justify-content: center;
+}
+#page-home .targets .item{
+    width: 15%;
+    display: block;
+justify-content: center;
+    margin-right: 20px;
+    text-align: center;
+}
+#page-home .targets .item .item-title{
+    display: block;
+    margin-right: 20px;
+    text-align: center;
+}
+#page-home .h-29{
+    width: 100%;
+    box-shadow: #d9d9d9 3px 3px 6px 0px inset, #d9d9d9 0px 0px 20px 0px inset;
+    height: 29px;
+}
+#page-home .h-49 {
+    width: 100%;
+    box-shadow: #d9d9d9 3px 3px 6px 0px inset, #d9d9d9 0px 0px 20px 0px inset;
+    height: 29px;
+}
+#page-home .banner-infor{
+    margin-top: 29px;
+    margin-bottom: 29px;
+    display: block;
+;
+}
+
+#page-home .product-item {
+    box-shadow: #ffffff 0px 10px 36px 0px, #29819C 0px 0px 0px 1px;
+    width: 15%;
+    margin: 12px;
+    border-radius: 15px;
+}
+#page-home a{
+    text-decoration: none;
+    color: #29819C;
+}
+#page-home .title-name{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 12px;
+}
+#page-home .product-category .product-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#page-home .product-item .product-img {
+    padding: 10px;
+    display: block;
+}
+#page-home .product-item .product-img img{
+    width: 100%;
+}
+#page-home .product-item .product-content{
+    padding: 5px;
+    text-align: center;
+}
+#page-home .product-category .list-item{
+    margin-bottom: 35px;
+}
+#page-home .product-item .product-content .product-title{
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1e21;
+    text-align: start;
+}
+#page-home .price{
+    text-align: start;
+}
+#page-home .price .price-cost{
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+#page-home .price .discount-price{
+    color: #29819C;
+}
+#page-home .product-content .btn-product{
+    background-color:#29819C;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+    color: #ffffff;
+    border: none;
+}
+#page-home .our-service{
+    display: flex;
+    justify-content: space-around;
+}

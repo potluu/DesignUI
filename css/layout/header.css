@@ -1,0 +1,174 @@
+.header{
+    font-family: Arial;
+    color: #ffffff;
+    background: #001C44;
+    display: block;
+}
+#mobile-header{
+    display: none;
+}
+header ul{
+    list-style-type: none;
+    margin-bottom: 0px;
+}
+.header .menu-nav{
+    flex-wrap:nowrap;
+}
+header a{
+    text-decoration: none;
+}
+ /*Header-top*/
+ .header-top{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    font-size: 13px;
+ }
+ .header-top .contact-infor {
+     display: flex;
+     align-items: center;}
+
+ .header-top .left-infor{
+    display: flex;
+    align-items: center;
+}
+  .header-top .right-account{
+     display: flex;
+     align-items: center;
+ }
+.header-top .right-account .register{
+    text-align: center;
+    margin-right: 59px;
+}
+/*Header center*/
+.header-center{
+   padding-top: 44px;
+    padding-bottom: 44px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+
+}
+.header-center .left-logo{
+display: block;
+    margin-right: 34px;
+    width: 30%;
+}
+
+.header-center .search{
+    width: 43%;
+    margin-right: 34px;
+}
+.header-center .input-search{
+    display: flex
+}
+.header-center .search input{
+    width: 90%;
+    height: 40px;
+    border:1px solid #29819C;
+    border-radius: 5px 0px 0px 5px;
+}
+.header-center .search  .searchbtn{
+    display: block;
+    height: 40px;
+    width: 60px;
+    background: #29819C;
+    padding: 8px 0px 4px 15px;
+    border-radius: 0px 26px 28px 0px;
+}
+.header-center .right-button{
+    display: flex;
+}
+
+.header-center .right-button span{
+   font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+}
+.header-center .right-button .btn-prescription{
+    margin-right: 43px;
+}
+.header-center .right-button button{
+    height: 40px;
+    width: 146px;
+    background-color: #2D99AE;
+    border-radius: 20px;
+    border: none;
+}
+.header-center .right-button .btn-cart .badge{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px ;
+    background: #29819C;
+    margin-top: -6px;
+    margin-left: 1px;
+}
+/*header bottom*/
+.header-bottom .nav-primary{
+background: #29819C;
+    opacity: 50%;
+    width: 10%;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 20px;
+
+}
+.header-bottom .nav-primary .menu-icon{
+    margin-top: 15px;
+}
+.header-bottom .nav-item{
+    width: 12%;
+    text-align: center;
+    padding: 16px;
+    margin-right: 20px;
+
+}
+@media only screen and (max-width: 765px) {
+ .header{
+    display: none;
+}
+    #mobile-header{
+     border-bottom:1px solid #29819C;
+    display: block;
+        left: 0px;
+        right: 0px;
+ }
+    .menu-mobile {
+    display: flex;
+     padding: 8px;
+ }
+ .badge{
+     background: #29819C;
+     border-radius: 10px;
+     width: 10px;
+     height: 10px;
+     font-size: 8px;
+     position: absolute;
+ }
+ #main-menu{
+     z-index: 3;
+     position: absolute;
+     display: none;
+     margin-top: 20px;
+ }
+
+ #main-menu li{
+     border-bottom: 1px solid  #29819C;
+ }
+#mobile-header .menu-logo{
+    width: 75%;
+    display: block;
+    text-align: center;
+}
+#input-search-mb{
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: none;
+}
+}
+
+
