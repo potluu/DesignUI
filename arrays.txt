@@ -1,7 +1,7 @@
 {
     "data": [
         {
-		"id" :"1"
+		"id" :"1",
             "name": "Tiger Nixon",
             "position": "System Architect",
             "salary": "$320,800",
@@ -11,7 +11,7 @@
 	
         },
 		{
-		"id" :"2"
+		"id" :"2",
             "name": "Tiger Nixon",
             "position": "System Architect",
             "salary": "$320,800",
@@ -21,7 +21,7 @@
 	
         },
 {
-		"id" :"3"
+		"id" :"3",
             "name": "Tiger Nixon",
             "position": "System Architect",
             "salary": "$320,800",
